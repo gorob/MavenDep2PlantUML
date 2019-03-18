@@ -1,0 +1,5 @@
+package "@projectArtifactId@ [@projectArtifactName@]" as @projectArtifactId@ @scope@ {
+    rectangle "@projectArtifactDescription@"
+
+@submodules@
+}

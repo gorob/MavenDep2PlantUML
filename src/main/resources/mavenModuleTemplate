@@ -1,0 +1,3 @@
+package "@mavenModuleArtifactId@ [@mavenModuleArtifactName@]" as @projectArtifactId@.@mavenModuleArtifactId@ @scope@ {
+    rectangle "@mavenModuleArtifactDescription@"
+}

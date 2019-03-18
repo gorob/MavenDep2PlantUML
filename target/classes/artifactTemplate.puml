@@ -1,0 +1,44 @@
+
+@startuml
+skinparam defaultFontName "Courier New"
+skinparam handwritten false
+
+!definelong mavenProject(projectArtifactId, projectArtifactName, projectArtifactDescription)
+	package "projectArtifactId [projectArtifactName]" as projectArtifactId {
+		rectangle "projectArtifactDescription"
+	}
+!enddefinelong
+
+!definelong mavenModule(projectArtifactId, mavenModuleArtifactId, mavenModuleArtifactName, mavenModuleArtifactDescription)
+	package "mavenModuleArtifactId [mavenModuleArtifactName]" as projectArtifactId.mavenModuleArtifactId {
+		rectangle "mavenModuleArtifactDescription"
+	}
+!enddefinelong
+
+
+package "project [projectArtifactName]" as projectArtifactId2 #FFDDDD {
+	package "modul [projectArtifactName]" as modul2 #AAAAAA {
+		rectangle "projectArtifactDescription"
+	}
+	package "modul [projectArtifactName]" as modul3 {
+		rectangle "projectArtifactDescription2"
+	}
+
+}
+
+
+
+
+
+
+
+rectangle "aaa" {
+
+	mavenProject("projekt", "Projekt", "Beschreibung zu Projekt")
+	
+	rectangle "bbb" {
+	mavenModule("projekt", "modul", "Modul", "Beschreibung zu Modul")
+	}
+}
+
+@enduml
